@@ -1,0 +1,6 @@
+  <Image
+        style={styles.image}
+        source={require('../assets/flowers3.png')}
+      />
+      <Text style={styles.happy}>HAPPY</Text>
+      <Text style={styles.birthday}>Birthday</Text>
