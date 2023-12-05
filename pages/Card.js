@@ -12,15 +12,14 @@ import { TouchableOpacity } from 'react-native'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 100,
-    marginBottom: 100,
+    marginTop: "auto",
+    marginBottom: "auto",
     alignItems: 'center',
     height: '100vh',
     padding: 50,
-    border: "5px solid black",
-    width: 500,
-    height: 200
-    
+    width: "90%",
+    height: 100
+
   },
 
 
@@ -32,19 +31,26 @@ const styles = StyleSheet.create({
 
 
   message: {
-    marginTop: 50
-
+    marginTop: 50,
+    fontWeight: "200"
   },
 
   from: {
     marginTop: 50,
-    fontSize: 20
+    fontSize: 20,
+    fontWeight: "bold"
 
   },
 
   to: {
     marginTop: 30,
-    fontSize: 20
+    fontSize: 20,
+    fontWeight: "bold"
+  },
+
+  span: {
+    fontWeight: "300",
+    fontSize: 18
   }
 
 })
@@ -53,7 +59,7 @@ const styles = StyleSheet.create({
 function Card() {
 
   return (
-    
+
     <View style={styles.container}>
       <ImageBackground
         style={styles.image}
@@ -61,9 +67,9 @@ function Card() {
       >
       </ImageBackground >
       <View>
-        <Text style={styles.to}>To: Jane</Text>
+        <Text style={styles.to}>To: <Text style={styles.span}>Jane</Text></Text>
         <Text style={styles.message}>Happy birthday to my dear friend Jane! May your day be filled with love, laughter, and lots of cake. Remember, age is just a number, and with every year that passes, you become more fabulous. Enjoy your special day, and may the laughter never cease! 🎉💕</Text>
-        <Text style={styles.from}>From: Promise Tshegofatso Magoga</Text>
+        <Text style={styles.from}>From: <Text style={styles.span}>Promise Tshegofatso Magoga</Text></Text>
       </View>
     </View>
 
